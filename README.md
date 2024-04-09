@@ -9,3 +9,5 @@ Exploring Mount Everest is a riveting experience that draws adventurers and thri
 The web application Everest Explorer presents itself as an electronic portal to the breathtaking majesty of Mount Everest. The world's highest peak can be virtually ascended, and users can explore its natural wonders, cultural legacy, and scientific significance through this unique digital platform designed to provide an immersive and educational experience. 
 
 Inspiration and Vision: The idea behind the Everest Explorer web application was to make the Everest experience more accessible to everyone. Inspired by the Himalayas and driven by a desire to share the wonders of this iconic peak with as many people as possible, the platform's creators imagined a way to break down geographical boundaries and allow users to explore the world from the comfort of their screens. 
+
+there are two html files; my-webpage.html covers my practice and more info regarding everest explore, and mteverest.html covers the main single page application  
