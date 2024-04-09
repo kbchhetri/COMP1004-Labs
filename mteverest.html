@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>mteverest site</title>
+      <link href="normalize.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap" rel="stylesheet">
+      <style>
+        body {
+          background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+          font-family: "Work Sans", sans-serif;
+        }
+        a {
+          text-decoration: none;
+        }
+        h1, h2, h3 {
+          font-family: "Days One" sans-serif;
+        }
+        nav {
+          display: flex;
+          background-color: #200e3d;
+          justify-content: center;
+          position: fixed;
+          width: 100%;
+          z-index: 1;
+        } 
+        nav ul {
+          display: flex;
+          align-items: center;
+          padding: 0 10%;
+          list-style: none;
+          
+        }
+        nav ul li a {
+          font-size: 16px;
+          padding: 0 15px;
+          color: white;
+          transition: 0.2s;
+          text-transform: uppercase;
+        }
+        nav ul li a:hover {
+          transition: 0.2s;
+          color: #52c5ff;
+          
+        }
+        .container {
+          position: relative;
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 15px;
+
+        }
+        .letsGo {
+         padding-top: 130px;
+        }
+        .letsGo img {
+          border-style: none;
+          border-radius: 50%;
+          margin: 0 auto;
+          max-width: 440px;
+          display: block;
+        }
+        h1 {
+          color: black;
+          text-align: center;
+          font-size: 24px;
+          margin: 30px 0px 100px;
+
+        }
+        .aboutEverest {
+          width: 90%;
+          max-width: 1100px;
+          height: auto;
+          background-color: white;
+          text-align: center;
+          padding: 40px 50px 70px;
+          box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px 0px rgb(255 114 114 / 80%);
+        }
+        .aboutEverest-section {
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          flex-flow: wrap;
+        }
+        .aboutEverest-image {
+          height: 580px;
+          width: 1100px;
+          background-image: url("images/");
+          background-size: cover;
+          background-position: center;
+         
+        }
+        .aboutEverest-text {
+          text-align: justify;
+          width: [width of img];
+        }   
+         
+        #Projects {
+          padding: 5px;
+          margin: 5%;
+          width: 90%;
+          height: auto;
+          text-align: center;
+        }  
+        .Projects {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: wrap;
+
+        }
+        #Projects h2 {
+          color: white
+        }
+        .everest-project{
+          width: 400px;
+          height: 400px;
+          background: white;
+          position: relative;
+          border-radius: 10px;
+          background-image: url("images/everestproject.jpg");
+          margin: 20px;
+          background-size: cover;
+          background-position: center;
+        }
+        .text {
+          position: absolute;
+          height: 65px;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          z-index: 2;
+          background-color: white;
+          overflow: hidden;
+          transition: 0.2s;
+          padding: 20px;
+
+        }
+          
+
+       
+
+      </style>
+
+    </head>
+    <body>
+      <nav>
+        <ul>
+          <li><a href="#aboutEverest">LEts explore Everest</a></li>
+          <li><a href="#Everestprojects">EverestProject</a></li>
+          <li><a href="#Contacts">Contactus</a></li>
+        </ul>
+      </nav>
+      <section class="letsGo">
+        <div class="container">
+          <img src="mt.jpg">
+          <h1>Mount Everest is the highest point on Earth. Learn about its history, the people who live there, and the people who visit to climb.</h1>
+        </div>
+
+      </section>
+      <section id="aboutEverest" class="aboutEverest">
+        <h2>lets explore everest</h2>
+        <div class="aboutEverest-section">
+          <div class="img">
+            <div class="aboutEverest-image">
+              <img src="imgeverest.jpg">
+            </div>
+          </div>
+          <div class="aboutEverest-text"> The name “Everest” means “the highest point”. Located in Nepal and Tibet, Asia,
+            
+            Mount Everest has two heights that are acceptable in both China and Nepal. With snow or ice cover on the peak, the height is 8,848.86 meters (29,032 feet) while the rock height is 8,843.48 meters 29,012 feet).</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="project">
+          <h2>Projects</h2>
+          <div class="projects">
+            <div class="everest-projects">
+              <div class="text">
+                <h3 class="project-name">Everest Facts</h3>
+                <div class="content">
+                  <p> A HTML projects about some facts about the everest.</p>
+                </div>
+                <a class="button" href="my-webpage.html" target="_bank">View Project</a>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </section>
+        
+    </body>
+
+
+
+</html>

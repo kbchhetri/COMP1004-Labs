@@ -1,0 +1,177 @@
+    <!doctype html>
+    <html>
+
+        <head>
+            <style type="text/css" >
+                body{
+                    background-color: aqua;
+                }
+                
+                .red{
+                    color:red;
+                    font: size 20px;
+                   
+
+                }
+                .large {
+                    font-size:200%;
+                }
+                #green {
+                    color:green;
+                }
+                #heading {
+                    background-color: blue;
+                }
+                #para {
+                    background-color: yellow;
+                    font-size: 20px;
+                }
+                
+            </style>
+            <title>my webpage</title>
+        </head>
+
+        <body>
+            <div id="heading">
+           
+            
+            <iframe src="https://www.everestgear.com" title="everestgear online kits" width="1600"></iframe>
+            <p class="large"> hello world lets explore everest</p></div>
+            <hr>
+            <p id="top"> <img src="mt.jpg" width="1000" height="200"></p>
+            <div id="para">
+            <p id="green"> p1 The name “Everest” means “the highest point”. <br> p3 Located in Nepal and Tibet, Asia,</p>
+            <p>Mount Everest has two heights that are acceptable in both China and Nepal. With snow or ice cover on the peak, the height is 8,848.86 meters (29,032 feet) while the rock height is 8,843.48 meters 29,012 feet).
+            </div>
+                
+            </div>>
+            </p>
+            <h2 id="kamal">hello <sup>everest</sup></h2>
+            <button type="button" onclick='document.getElementById("kamal").innerHTML = "i am on the top of the world"'>Click Me!</button>
+
+            <hr>
+            <h3>some of the favourite tools for climber</h3>
+            <ul>
+            <li><strong>down suit</strong></li>
+            <li>boots</li>
+            <li>glovess</li>
+            </ul>
+            <h3>our guide list to assist customer regarding any kind of enqueries to visit everest</h3>
+            
+            <ol type="i" >
+                <li><strong>rob</strong></li>
+                <li>kamal</li>
+                <li>sevan</li>
+    
+            </ol>
+            <button type="button" onclick="myFunction()">Click Me!</button>
+            <p id="1">choose your guide</p>
+            <p id="2"></p>
+            <p id="3"></p>
+            <button type="button" onclick="myFunction()">Click Me!</button>
+           
+
+
+            <script>
+                function myFunction() {
+                  document.getElementById("1").innerHTML = "rob";
+                  
+                }
+            </script>
+                
+                
+            <img src="everest.png" width="100" height="100" align="middle">
+            <p>everest-gear-tools</p>
+            <p><a href="https://www.everestgear.com">click this for kits-tool price info<img src="everest.png"></a></p>
+            <form action="https://www.snow-forecast.com/resorts/Everest/snow-report">
+                
+                <p>username: <input type="text" placeholder="username"></p>
+                <p>stay logged in:<input type="checkbox" checked></p>
+                <p> under 18:<input type="radio" name="age" value="u18"> </p>
+                <p> over 18:<input type="radio" name="age" value="o18" > </p>
+                <p id="apple"></p>
+                <script>
+                try {
+                    const age = {type:"radio", name:"18", value:"018"};
+                    age = {type:"radio", name:"19", value:"19"};
+                  }
+                  catch (err) {
+                    document.getElementById("apple").innerHTML = err;
+                  }
+                  </script>
+                <p> favourite destiny to explore:
+                    <select>
+                        <option>k2</option>
+                        <option selected>mount everest</option>
+                        <option>manaslu</option>
+                    </select>
+
+                </p>
+               
+                <p>want to know about forecast in everest region?</p>
+                <p><input type="submit" value="click here"></p>
+            </forms>
+            <form action="https://timesofindia.indiatimes.com/travel/things-to-do/an-introduction-to-mount-everest/articleshow/34739410.cms">
+                <p>want to know more about everest?</p> 
+                <p><input type="submit" value="click here"></p>
+            </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>n/m</th>
+                            <th>iteam</th>
+                            <th>brand</th>
+                            <th>cost around</th>
+                        </tr>
+                        <hr>
+                    </thead>
+                    <tr>
+                        <td>1.</td>
+                        <td>down suit</td>
+                        <td>everest</td>
+                        <td>£45-£3000</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2.</td>
+                        <td>gloves</td>
+                        <td>everest</td>
+                        <td>£49-£200</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3.</td>
+                        <td>boots</td>
+                        <td>everest</td>
+                        <td>£100-£2500</td>
+                    </tr>
+                </table>
+                <p><a href="https://www.everestgear.com">click me for more kits-tool price info<img src="everest.png"></a></p>
+                <p><a href="https://www.google.com">click here to go to google</a></p>
+                <p><a href="mteverest.html">hello MT. everest</a></p>
+                
+                
+                <p id= "demo"><a href="back to top">back to top</a></p>
+                <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+                &lt;a href="http://google.com"&gt;
+                <audio controls>
+                    <source src="audio.mp3">
+                    please upgrade your browser!
+                </audio>
+
+                <video width="500" height="320" controls>
+                    <source src="video.mp4">
+                    please upgrade your browser!
+                </vedio>
+                
+                
+            </body>
+        </html>
+        <p id="?"></p>
+        <script>
+            // Set Item
+            localStorage.setItem("lastname", "Smith");
+            // Retrieve
+            document.getElementById("?").innerHTML = localStorage.getItem("lastname");
+            </script>
