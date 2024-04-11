@@ -8,6 +8,8 @@
 
       <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap" rel="stylesheet">
 
+      <link rel="stylesheet" type="txt/css" href="mounteverest.css">
+
       <style>
         body {
           background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
@@ -162,6 +164,88 @@
           margin-bottom: 100px;
           margin-left: 10px;
         }
+
+        .contact {
+          width: 100%;
+          height: auto;
+          padding: 75px 0 50px 0;
+          text-align: center;
+          background-color: rgba(3,3,3,45%);
+
+        }
+
+        .contact p {
+          margin-bottom: 50px;
+
+        }
+
+        .contact h2, .contact p {
+          color: white;
+        }
+
+        .contact-form {
+          max-width: 800px;
+          display: flex;
+          text-align: left;
+          max-width: 1100px;
+          margin: 0 auto;
+          color: white;
+        }
+        .contact-form label {
+          display: block;
+          margin-bottom: 9px;
+
+
+        }
+
+        .message {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+        }
+
+        .message textarea {
+          border-radius: 5px;
+          border: 0px;
+
+        }
+
+        .contact-details {
+          flex: 1;
+          margin-right: 50%;
+
+        }
+
+        .contact-details input {
+          width: 100px;
+          border-radius: 5px;
+          border: 0px;
+          padding: 15px 20px;
+          margin-bottom: 20px;
+        }
+
+        .message button {
+          color: #1d3d5f;
+          border: 0;
+          border-radius: 5px;
+          background: lightblue;
+          width: 140px;
+          height: 40px;
+          margin-top: 40px;
+          margin-left: auto;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          transform-origin: 0.3s;
+        }
+
+        .message button:hover {
+          background: black;
+          color: white;
+          transition: 0.2s;
+        }
+
           
 
        
@@ -223,5 +307,41 @@
         </div>
       </section>
         
+      <section id="contactme" class="contact">
+        <h2>Contact</h2>
+        <p>fill this form to contact for trip to everest</p>
+
+        <form class="contact-form">
+
+          <div class="contact-details">
+
+
+             <lable for="name">Name</lable>
+             <input type="text" id="yourname" placeholder="yourname">
+ 
+             <label for="subject">subject</label>
+             <input type="text" id="subject" placeholder="Reason for your message">
+
+             <label for="Email">Email</label>
+             <input type="Email" id="Email" placeholder="your email adress">
+          </div>  
+          
+          <div class="message">
+            
+            <label for="msg">Message</label>
+            <textarea id="msg" row="15"></textarea>
+            <button tpe="submit">Submit</button>
+          </div>
+
+
+
+        </form>
+      </section>
+
+      <footer>
+        <div class="container">
+          
+        </div>
+      </footer>
     </body>
 </html>
