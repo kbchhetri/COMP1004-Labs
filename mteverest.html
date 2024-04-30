@@ -318,12 +318,14 @@
 
              <lable for="name">Name</lable>
              <input type="text" id="yourname" placeholder="yourname">
+             
  
              <label for="subject">subject</label>
              <input type="text" id="subject" placeholder="Reason for your message">
 
              <label for="Email">Email</label>
              <input type="Email" id="Email" placeholder="your email adress">
+             <button id="checkall">loggin</button>
           </div>  
           
           <div class="message">
@@ -338,7 +340,7 @@
         </form>
       </section>
       <script type="text/javascript">
-          document.getElementById("Name").onclick = function(){
+          document.getElementById("name").onclick = function(){
             var nameEntered = document.getElementById("yourname").value;
             var yourname = "kamal bhandari";
             if (nameEntered == yourname) {
