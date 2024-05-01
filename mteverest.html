@@ -259,6 +259,7 @@
           <li><a href="#aboutEverest">LEts explore Everest</a></li>
           <li><a href="#Everestprojects">EverestProject</a></li>
           <li><a href="#Contacts">Contactus</a></li>
+          
         </ul>
       </nav>
       <section class="letsGo">
@@ -325,24 +326,55 @@
 
              <label for="Email">Email</label>
              <input type="Email" id="Email" placeholder="your email adress">
+
+             <lable for="age">how old are you?</lable>
+             <input type="text" id="yourage" placeholder="yourage">
+
              <button id="checkall">loggin</button>
           </div>  
           
           <div class="message">
             
             <label for="msg">Message</label>
-            <textarea id="msg" row="15"></textarea>
+            <textarea id="msg" row="2" cols="3"></textarea>
             <button tpe="submit">Submit</button>
           </div>
 
 
 
         </form>
+
+        <section id="Give feedback after your trip" class="share-your-reviews" >
+          <h2>please feel free to give some feedback</h2>
+          <p>share your experience with viewers</p>
+  
+           
+            
+            <div class="share-your-reviews">
+              
+              <label for="reviews">share your experience with viewers</label>
+             
+              <textarea id="reviews" rows="6" cols="100"></textarea> 
+              <button tpe="submit">Submit</button>
+            </div>
+  
+  
+  
+          </form>
+
       </section>
       <script type="text/javascript">
-          document.getElementById("name").onclick = function(){
+          document.getElementById("checkall").onclick = function(){
             var nameEntered = document.getElementById("yourname").value;
+            var subjectEntered = document.getElementById("subject").value;
+            var emailEntered = document.getElementById("email").value;
+            var ageEntered = document.getElementById("yourage").value;
+            var msgEntered = document.getElementById("message").value;
+            var reviewsEntered = document.getElementById("reviews").value;
             var yourname = "kamal bhandari";
+            var subject = "booking trip";
+            var email = "kbc_kamal200@yahoo.com";
+
             if (nameEntered == yourname) {
               alert("correct!!");
 
@@ -350,7 +382,27 @@
               alert("try again")
             }
             
-          }
+            if (subjectEntered == subject) {
+              alert("correct!!");
+
+            }else {
+              alert("try again")
+            }
+            if (emailEntered == email) {
+              alert("correct!!");
+
+            }else {
+              alert("try again")
+            }
+
+            if (ageEntered == yourage) {
+              alert("over 18 can explore top of the everest!!");
+
+            }else {
+              alert("try againunder 18 can explore to the basecamp only")
+            }
+
+          };
 
 
 
