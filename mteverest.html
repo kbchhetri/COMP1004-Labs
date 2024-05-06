@@ -330,21 +330,25 @@
              <lable for="age">how old are you?</lable>
              <input type="text" id="yourage" placeholder="yourage">
 
-             <button id="checkall">loggin</button>
+             
           </div>  
           
           <div class="message">
             
             <label for="msg">Message</label>
             <textarea id="msg" row="2" cols="3"></textarea>
-            <button tpe="submit">Submit</button>
+
+            <button type="submit" id="file">Submit</button>
           </div>
 
 
 
         </form>
+      </section> 
 
-        <section id="Give feedback after your trip" class="share-your-reviews" >
+      
+
+      <section id="Give feedback after your trip" class="share-your-reviews" >
           <h2>please feel free to give some feedback</h2>
           <p>share your experience with viewers</p>
   
@@ -355,15 +359,22 @@
               <label for="reviews">share your experience with viewers</label>
              
               <textarea id="reviews" rows="6" cols="100"></textarea> 
-              <button tpe="submit">Submit</button>
+              <button type="submit">Submit</button>
             </div>
+      </section>    
   
-  
-  
-          </form>
-
-      </section>
       <script type="text/javascript">
+        // bind click event to button
+        $('#file').click(function() {
+          // send ajax request to save.php (using POST method)
+          $.post('save.php', { text: "sample text"}, function(data) { 
+            // output response to console
+            console.log(data); 
+          });
+        });
+      </script>
+
+     <script type="text/javascript">
           document.getElementById("checkall").onclick = function(){
             var nameEntered = document.getElementById("yourname").value;
             var subjectEntered = document.getElementById("subject").value;
@@ -408,5 +419,6 @@
 
 
       </script>
+    
     </body>
 </html>
