@@ -332,76 +332,6 @@
                 <label for="Email">Email</label>
                 <input name="Email" type="text" id="Email" autocomplete="off" />
 
-<<<<<<< HEAD
-             <lable for="name">Name</lable>
-             <input type="text" id="yourname" placeholder="yourname">
-             
- 
-             <label for="subject">subject</label>
-             <input type="text" id="subject" placeholder="Reason for your message">
-
-             <label for="Email">Email</label>
-             <input type="Email" id="Email" placeholder="your email adress">
-
-             <lable for="age">how old are you?</lable>
-             <input type="text" id="yourage" placeholder="yourage">
-
-             
-          </div>  
-          
-          <div class="message">
-            
-            <label for="msg">Message</label>
-            <textarea id="msg" row="2" cols="3"></textarea>
-
-            <button type="submit" id="file">Submit</button>
-          </div>
-
-
-
-        </form>
-      </section> 
-
-      
-
-      <section id="Give feedback after your trip" class="share-your-reviews" >
-          <h2>please feel free to give some feedback</h2>
-          <p>share your experience with viewers</p>
-  
-           
-            
-            <div class="share-your-reviews">
-              
-              <label for="reviews">share your experience with viewers</label>
-             
-              <textarea id="reviews" rows="6" cols="100"></textarea> 
-              <button type="submit">Submit</button>
-            </div>
-      </section>    
-  
-      <script type="text/javascript">
-        // bind click event to button
-        $('#file').click(function() {
-          // send ajax request to save.php (using POST method)
-          $.post('save.php', { text: "sample text"}, function(data) { 
-            // output response to console
-            console.log(data); 
-          });
-        });
-      </script>
-
-     <script type="text/javascript">
-          document.getElementById("checkall").onclick = function(){
-            var nameEntered = document.getElementById("yourname").value;
-            var subjectEntered = document.getElementById("subject").value;
-            var emailEntered = document.getElementById("email").value;
-            var ageEntered = document.getElementById("yourage").value;
-            var msgEntered = document.getElementById("message").value;
-            var reviewsEntered = document.getElementById("reviews").value;
-            var yourname = "kamal bhandari";
-            var subject = "booking trip";
-            var email = "kbc_kamal200@yahoo.com";
-=======
                 <label for="yourage">Your age?</label>
                 <input name="yourage" type="text" id="yourage" autocomplete="off" />
             </div>
@@ -413,7 +343,6 @@
             </div>
         </form>
     </section>
->>>>>>> b58ca67b6986932f0a1e9b42ec53f918512f119b
 
     <section id="Give feedback after your trip" class="share-your-reviews">
         <h2>Please feel free to give some feedback</h2>
@@ -446,14 +375,16 @@
               return false;
           }
     
-          if (emailEntered === "") {
-              alert("Please enter your email");
-              return false;
-          }
+           // Check if email contains "@" symbol
+        if (!emailEntered.includes("@")) {
+            alert("Please enter a valid email address");
+            return false;
+        }
     
-          if (ageEntered === "") {
-              alert("Please enter your age");
-              return false;
+          // Check if age contains only numbers
+          if (!/^\d+$/.test(ageEntered)) {
+            alert("Please enter a valid age (only numbers allowed)");
+            return false;
           }
     
           if (msgEntered === "") {
@@ -498,12 +429,5 @@
                    please upgrade your browser!
                    </vedio>
 
-<<<<<<< HEAD
-
-
-      </script>
-    
-=======
->>>>>>> b58ca67b6986932f0a1e9b42ec53f918512f119b
     </body>
 </html>
