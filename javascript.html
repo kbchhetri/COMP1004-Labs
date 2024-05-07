@@ -65,16 +65,17 @@
                 return false;
             }
 
-            if (emailEntered === "") {
-                alert("Please enter your email");
-                return false;
+             // Check if email contains "@" symbol
+             if (!emailEntered.includes("@")) {
+             alert("Please enter a valid email address");
+             return false;
             }
 
-            if (ageEntered === "") {
-                alert("Please enter your age");
-                return false;
-            }
-
+            // Check if age contains only numbers
+             if (!/^\d+$/.test(ageEntered)) {
+              alert("Please enter a valid age (only numbers allowed)");
+              return false;
+           }
             if (msgEntered === "") {
                 alert("Please enter your message");
                 return false;
@@ -90,9 +91,7 @@
             }
         };
 
-        document.getElementById("clickMe").onclick = function () {
-            alert("Hi!");
-        };
+       
     </script>
 
 </body>
