@@ -358,50 +358,63 @@
     <button id="clickMe">Click me</button>
 
     <script type="text/javascript">
-        document.getElementById("submit").onclick = function () {
-            alert("Submitted!");
-            var nameEntered = document.getElementById("yourname").value;
-            var subjectEntered = document.getElementById("subject").value;
-            var emailEntered = document.getElementById("Email").value;
-            var ageEntered = document.getElementById("yourage").value;
-            var msgEntered = document.getElementById("msg").value;
-
-            if (nameEntered === "") {
-                alert("Please enter your name");
-                return false;
-            }
-
-            if (subjectEntered === "") {
-                alert("Please enter the subject");
-                return false;
-            }
-
-            if (emailEntered === "") {
-                alert("Please enter your email");
-                return false;
-            }
-
-            if (ageEntered === "") {
-                alert("Please enter your age");
-                return false;
-            }
-
-            if (msgEntered === "") {
-                alert("Please enter your message");
-                return false;
-            }
-        };
-
-        document.getElementById("send").onclick = function () {
-            alert("Submitted!");
-            var reviewsEntered = document.getElementById("reviews").value;
-            if (reviewsEntered === "") {
-                alert("Please enter your review");
-                return false;
-            }
-        };
-
-       
+      document.getElementById("submit").onclick = function () {
+          var nameEntered = document.getElementById("yourname").value;
+          var subjectEntered = document.getElementById("subject").value;
+          var emailEntered = document.getElementById("Email").value;
+          var ageEntered = document.getElementById("yourage").value;
+          var msgEntered = document.getElementById("msg").value;
+    
+          if (nameEntered === "") {
+              alert("Please enter your name");
+              return false;
+          }
+    
+          if (subjectEntered === "") {
+              alert("Please enter the subject");
+              return false;
+          }
+    
+          if (emailEntered === "") {
+              alert("Please enter your email");
+              return false;
+          }
+    
+          if (ageEntered === "") {
+              alert("Please enter your age");
+              return false;
+          }
+    
+          if (msgEntered === "") {
+              alert("Please enter your message");
+              return false;
+          }
+    
+          // Create an object to hold the form data
+          const formData = {
+              name: nameEntered,
+              subject: subjectEntered,
+              email: emailEntered,
+              age: ageEntered,
+              message: msgEntered
+          };
+    
+          // Convert the form data object to JSON string
+          const jsonData = JSON.stringify(formData, null, 2);
+    
+          // Write JSON data to a file using a server-side script (Node.js)
+          // This cannot be done directly in client-side JavaScript running in a browser
+          // You need to make an HTTP request to a server endpoint to handle file writing
+          // See the previous example provided for server-side code to handle this operation
+      }
+    
+      document.getElementById("send").onclick = function () {
+          var reviewsEntered = document.getElementById("reviews").value;
+          if (reviewsEntered === "") {
+              alert("Please enter your review");
+              return false;
+          }
+      }
     </script>
 
                  <audio controls>
