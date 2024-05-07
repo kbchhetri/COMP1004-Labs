@@ -4,11 +4,12 @@
       <meta charset="utf-8">
       <title>mteverest site</title>
 
-      <link href="normalize.css" rel="stylesheet">
+      <link href="mounteverest.css" rel="stylesheet">
 
       <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap" rel="stylesheet">
 
       <link rel="stylesheet" type="txt/css" href="mounteverest.css">
+      
 
       <style>
         body {
@@ -246,7 +247,13 @@
           transition: 0.2s;
         }
 
-          
+         .share {
+          background: black;
+          color: white;
+          transition: 0.2s;
+
+
+         }
 
        
 
@@ -295,8 +302,10 @@
                          <p> A HTML projects about some facts about the everest.</p>
                     </div>
 
-                    <a class="button" href="../html/my-webpage.html" target="_bank">View Project</a>
+                    <a class="button" href="my-webpage.html" target="_bank">View Project</a>
                     <a class="button" href="https://www.snow-forecast.com/resorts/Everest/snow-report?" target="_bank">View Project</a>
+                    
+                    <a class="button" href="https://www.britannica.com/place/Mount-Everest" target="_bank">View Project</a>
                     
               </div>
                 
@@ -308,15 +317,22 @@
         </div>
       </section>
         
-      <section id="contactme" class="contact">
+      <section id="Contactus" class="contact">
         <h2>Contact</h2>
-        <p>fill this form to contact for trip to everest</p>
+        <p>Fill this form to contact for a trip to Everest</p>
 
         <form class="contact-form">
+            <div class="contact-details">
+                <label for="yourname">Name</label>
+                <input name="yourname" type="text" id="yourname" autocomplete="yourname" />
 
-          <div class="contact-details">
+                <label for="subject">Subject</label>
+                <input name="subject" type="text" id="subject" autocomplete="off" />
 
+                <label for="Email">Email</label>
+                <input name="Email" type="text" id="Email" autocomplete="off" />
 
+<<<<<<< HEAD
              <lable for="name">Name</lable>
              <input type="text" id="yourname" placeholder="yourname">
              
@@ -385,40 +401,109 @@
             var yourname = "kamal bhandari";
             var subject = "booking trip";
             var email = "kbc_kamal200@yahoo.com";
+=======
+                <label for="yourage">Your age?</label>
+                <input name="yourage" type="text" id="yourage" autocomplete="off" />
+            </div>
 
-            if (nameEntered == yourname) {
-              alert("correct!!");
+            <div class="message">
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="2" cols="3"></textarea>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+>>>>>>> b58ca67b6986932f0a1e9b42ec53f918512f119b
 
-            }else {
-              alert("try again")
-            }
-            
-            if (subjectEntered == subject) {
-              alert("correct!!");
+    <section id="Give feedback after your trip" class="share-your-reviews">
+        <h2>Please feel free to give some feedback</h2>
+        <p>Share your experience with viewers</p>
 
-            }else {
-              alert("try again")
-            }
-            if (emailEntered == email) {
-              alert("correct!!");
+        <div class="share-your-reviews">
+            <label for="reviews">Share your experience with viewers</label>
+            <textarea id="reviews" rows="6" cols="100"></textarea>
+            <button id="send">Submit</button>
+        </div>
+    </section>
 
-            }else {
-              alert("try again")
-            }
+    <button id="clickMe">Click me</button>
 
-            if (ageEntered == yourage) {
-              alert("over 18 can explore top of the everest!!");
-
-            }else {
-              alert("try againunder 18 can explore to the basecamp only")
-            }
-
+    <script type="text/javascript">
+      document.getElementById("submit").onclick = function () {
+          var nameEntered = document.getElementById("yourname").value;
+          var subjectEntered = document.getElementById("subject").value;
+          var emailEntered = document.getElementById("Email").value;
+          var ageEntered = document.getElementById("yourage").value;
+          var msgEntered = document.getElementById("msg").value;
+    
+          if (nameEntered === "") {
+              alert("Please enter your name");
+              return false;
+          }
+    
+          if (subjectEntered === "") {
+              alert("Please enter the subject");
+              return false;
+          }
+    
+          if (emailEntered === "") {
+              alert("Please enter your email");
+              return false;
+          }
+    
+          if (ageEntered === "") {
+              alert("Please enter your age");
+              return false;
+          }
+    
+          if (msgEntered === "") {
+              alert("Please enter your message");
+              return false;
+          }
+    
+          // Create an object to hold the form data
+          const formData = {
+              name: nameEntered,
+              subject: subjectEntered,
+              email: emailEntered,
+              age: ageEntered,
+              message: msgEntered
           };
+    
+          // Convert the form data object to JSON string
+          const jsonData = JSON.stringify(formData, null, 2);
+    
+          // Write JSON data to a file using a server-side script (Node.js)
+          // This cannot be done directly in client-side JavaScript running in a browser
+          // You need to make an HTTP request to a server endpoint to handle file writing
+          // See the previous example provided for server-side code to handle this operation
+      }
+    
+      document.getElementById("send").onclick = function () {
+          var reviewsEntered = document.getElementById("reviews").value;
+          if (reviewsEntered === "") {
+              alert("Please enter your review");
+              return false;
+          }
+      }
+    </script>
 
+                 <audio controls>
+                  <source src="audio.mp3">
+                   please upgrade your browser!
+                   </audio>
+ 
+                  <video width="500" height="320" controls>
+                  <source src="video.mp4">
+                   please upgrade your browser!
+                   </vedio>
 
+<<<<<<< HEAD
 
 
       </script>
     
+=======
+>>>>>>> b58ca67b6986932f0a1e9b42ec53f918512f119b
     </body>
 </html>

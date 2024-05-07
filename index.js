@@ -9,9 +9,7 @@ console.log("Before Adding data",JSON.stringify(jsonData, null, 4));
 
 // Modify the JavaScript object by adding new data
 jsonData.users.push({
-    name: "kamal bhandari",
-    email: "kamalchhetri2016@gmail.com",
-    age : 20
+    
 });
 
 

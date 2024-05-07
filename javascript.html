@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>javascript</title>
+</head>
+
+<body>
+    <section id="Contactus" class="contact">
+        <h2>Contact</h2>
+        <p>Fill this form to contact for a trip to Everest</p>
+
+        <form class="contact-form">
+            <div class="contact-details">
+                <label for="yourname">Name</label>
+                <input name="yourname" type="text" id="yourname" autocomplete="yourname" />
+
+                <label for="subject">Subject</label>
+                <input name="subject" type="text" id="subject" autocomplete="off" />
+
+                <label for="Email">Email</label>
+                <input name="Email" type="text" id="Email" autocomplete="off" />
+
+                <label for="yourage">Your age?</label>
+                <input name="yourage" type="text" id="yourage" autocomplete="off" />
+            </div>
+
+            <div class="message">
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="2" cols="3"></textarea>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="Give feedback after your trip" class="share-your-reviews">
+        <h2>Please feel free to give some feedback</h2>
+        <p>Share your experience with viewers</p>
+
+        <div class="share-your-reviews">
+            <label for="reviews">Share your experience with viewers</label>
+            <textarea id="reviews" rows="6" cols="100"></textarea>
+            <button id="send">Submit</button>
+        </div>
+    </section>
+
+    <button id="clickMe">Click me</button>
+
+    <script type="text/javascript">
+        document.getElementById("submit").onclick = function () {
+            alert("Submitted!");
+            var nameEntered = document.getElementById("yourname").value;
+            var subjectEntered = document.getElementById("subject").value;
+            var emailEntered = document.getElementById("Email").value;
+            var ageEntered = document.getElementById("yourage").value;
+            var msgEntered = document.getElementById("msg").value;
+
+            if (nameEntered === "") {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if (subjectEntered === "") {
+                alert("Please enter the subject");
+                return false;
+            }
+
+            if (emailEntered === "") {
+                alert("Please enter your email");
+                return false;
+            }
+
+            if (ageEntered === "") {
+                alert("Please enter your age");
+                return false;
+            }
+
+            if (msgEntered === "") {
+                alert("Please enter your message");
+                return false;
+            }
+        };
+
+        document.getElementById("send").onclick = function () {
+            alert("Submitted!");
+            var reviewsEntered = document.getElementById("reviews").value;
+            if (reviewsEntered === "") {
+                alert("Please enter your review");
+                return false;
+            }
+        };
+
+        document.getElementById("clickMe").onclick = function () {
+            alert("Hi!");
+        };
+    </script>
+
+</body>
+
+</html>
